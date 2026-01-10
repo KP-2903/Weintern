@@ -1,6 +1,6 @@
 import re
 
-# Small sample dictionary (can be expanded or loaded from a file)
+
 COMMON_PASSWORDS = {
     "password", "123456", "qwerty", "admin", "letmein",
     "welcome", "iloveyou", "abc123", "password123"
@@ -74,10 +74,10 @@ def analyze_password(password):
     return {
         "Score": score,
         "Strength": strength,
-        "Suggestions": suggestions or ["Password looks strong 👍"]
+        "Suggestions": suggestions or ["Password looks strong"]
     }
 
-# Example usage
+
 if __name__ == "__main__":
     pwd = input("Enter password to analyze: ")
     result = analyze_password(pwd)

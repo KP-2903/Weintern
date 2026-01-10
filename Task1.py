@@ -3,7 +3,7 @@ import re
 
 COMMON_PASSWORDS = {
     "password", "123456", "qwerty", "admin", "letmein",
-    "welcome", "iloveyou", "abc123", "password123"
+    "welcome","safepassword", "abc123", "password123"
 }
 
 def check_dictionary(password):
